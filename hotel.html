@@ -1,0 +1,125 @@
+<DOCTYPE html>
+ <html>
+     <head>
+         <title>hotel</title>
+   </meta charset="utf-8" content="width=divice-width">
+     
+     </head>
+     <body>
+         <div class="">
+            <h1 id="BIENVENUE">veuillez remplir ce formulaire svp</h1> 
+         </div>
+         <div class="principale">
+             <fieldset  style="background-color:#acd; color: blue;">
+             <legend>Informations à renseigner</legend>
+             <form class="" action="" method="get" accept-charset="utf-8">
+                 
+               <label for="nom">Nom</label>
+               <input type="text" name="" id="" value="" id="n" /><br /><br />
+               
+                <label for="prenom">PRENOM:</label>
+               <input type="text" name="" id="" value="" id="p"/><br /><br />
+               
+            <label for="nationality">NATIONALITÉ :</label>
+             <input type="text" name="" id="" value="" id="na"/><br /><br />
+            <label for="age">DATE NAISS:</label>
+            <input type="date" name="" id="" value="" id="dn"/><br /><br />
+            
+            <label for="sejour">SÉJOUR :</label>
+            <input type="number" name="" id="" value="" placeholder="durée de séjour" id="s"/><br /><br />
+            
+            <label for="identifiant">IDENTIFIANT :</label>
+            <input type="password" name="" id="" value="" id="ide"/><br />
+            
+             </form>
+             </fieldset>
+         </div>
+         <div class="">
+    <fieldset class="">
+    <legend>Profile</legend>
+    <img id="cadre" src="" alt="" height="100px" />
+<label for="profile">votre profile</label>
+<input type="file" name="" id="profile" value="" accept="image/jpg image/png image/jpeg" />
+             </fieldset>
+         </div>
+     </body>
+     <style type="text/css" media="all">
+         body{
+       display: flex;
+       margin: 0;
+       color: rgb(0, 255, 170);
+       justify-content: center ;
+       align-items: center;
+       background-color: rgb(77, 54, 58);
+            }
+            input{
+                border-radius: 17px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
+                font-size: 20px;
+                color: rgb(245, 242, 242);
+                background-color: black;
+                text-align: center;
+            }
+            fieldset{
+                border-radius: 2em;
+            }
+         #cadre{
+             border-radius: 100%;
+             border: 4px solid rgb(0, 81, 255) ;
+             justify-content: center;
+             align-items: center;
+
+         }
+         
+         #profile{
+             display: none;
+             margin: 100px;
+             padding: 100px;
+         }
+         #BIENVENUE{
+            position: relative;
+            padding: 30px;
+            border-bottom-left-radius:100% ;
+            border-bottom-right-radius:100% ;
+            border-top-left-radius:100% ;
+            border-top-right-radius:100% ;
+            background-color: blue;
+            color: #fff;
+            animation:an 4s infinite;
+         }
+         legend{
+            color: hsl(258, 100%, 3%);
+            border: double 2PX;
+            border-radius: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            background-color: #fff;
+            box-shadow: 4px 3px 12px rgb(133, 73, 229);
+         }
+         @keyframes an{
+            0%{
+                color: rebeccapurple;
+            }
+            25%{
+                color: rgb(188, 236, 12);
+            }
+            50%{
+                color: rgb(1, 22, 25);
+            }
+            75%{
+                color: rgb(69, 12, 240);
+            }
+            100%{
+                color: rgb(246, 245, 247);
+            }
+         }
+         
+     </style>
+     <script type="text/javascript" charset="utf-8">
+        let display= document.getElementById('cadre');
+        let choix=document.getElementById('profile');
+choix.onchange = function(){
+display.src = URL.createObjectURL(choix.files[0]);
+}
+     </script>
+ </html>
